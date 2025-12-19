@@ -21,8 +21,8 @@ Sou estudante de Ciência de Dados com uma base sólida em logística e operaç�
 | Categoria | Ferramentas|
 | :--- | :--- |
 | **Linguagens** | Python, SQL |
-| **Visualização** | [cite_start]Power BI |
-| **Banco de Dados** | [cite_start]PostgreSQL |
+| **Visualização** | Power BI |
+| **Banco de Dados** | PostgreSQL |
 | **Outros** | Excel, Sistemas Integrados (ERP), Estatística |
 
 ---
