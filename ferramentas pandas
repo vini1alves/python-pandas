@@ -1,0 +1,282 @@
+import pandas as pd
+from pandas import pivot
+
+df = pd.DataFrame([[1,2,3],[4,5,6],[7,8,9],[10,11,12]], columns=["A","B","C"], index=["X","Y","Z","W"])
+
+exibiçao
+
+print()
+print(df.shape)
+'''mortra o corpo do df'''
+print(df)
+'''para exibir o conteúdo de um DataFrame (df)'''
+print(df.info())
+'''resumo detalhado de um DataFrame (df)'''
+print(df.describe())
+'''resumo estatístico das colunas numéricas de um DataFrame'''
+print(df.nunique())
+'''encontrar o número de valores únicos em uma coluna ou série chamada'''
+print(df['A'].unique())
+'''mostra no df onde somente os que tenha a determinada colunas A'''
+print(df.tail())
+'''delimita a quantidade de linhas selecionadas'''
+print(df.columns)
+'''mostra as colunas da tabela em questao'''
+print(df.sort_values(['State', 'Country'],  ascending=True))
+'''sorteia baseado primeiro no state e depois country onde true e de A-Z e false e Z-A'''
+print(df.CustomerName)
+'''mostra o dataframe .sobre o nome da coluna'''
+
+for index, row in df.iterrows():
+	print(index)'''linhas '''
+	print(row['Country'])'''serie [onde é country e nome da colunas]'''
+	
+	
+
+	filtro de dados
+	
+print(df.loc[df['UnitPrice'] <= 5])
+'''mostra na vendas no preço on ele e menor igaul a 5'''
+print(df.loc[df['UnitPrice'] > 210, ['CustomerName','UnitPrice']])
+'''seleciona na coluna uniprice onde o valor seja maior que 210 na coluna costomernome na coluna uniprice'''
+print(df[(df['UnitPrice'] >= 200) & (df['Country']=='Australia')])
+'''serve para filtrar e exibir linhas específicas de uma tabela de dados'''
+print(df[df['CustomerName'].str.contains("Karan|Amir", case=False)])
+'''(|)= uma escolha a mais'''
+'''True or False Correspondência Exata'''
+'''filtrar o seu conjunto de dados (vendas) para mostrar apenas as linhas que satisfazem uma condição específica e, em seguida, imprimir o resultado'''
+
+print(df[df['Country'].isin(["Canada"])])
+'''em a finalidade de filtrar o DataFrame vendas para exibir apenas as transações que ocorreram no Canadá.'''
+
+print(df[df['Country'].isin(["Canada","Australia"]) & (df['CustomerName'].str.startswith("Karan"))])
+'''O objetivo é imprimir as vendas que atendem simultaneamente a duas condições'''
+
+print(df.query('Country == "Canada" '))
+print(df.query('Country == "Canada" and Country == "Australia" '))
+'''O comando print(vendas.query('Country == "Canada" ')) busca e imprime todas as linhas do DataFrame vendas onde o valor na coluna Country (País) é exatamente igual a "Canada".'''
+
+adiconar colunas e remover
+
+df['price'] = 4.99
+'''addiciona a coluna price'''
+
+vendas['new_price'] = np.where(vendas['Country']=='India', 100, 150)
+print(vendas)
+'''Este é um trecho de código Python que utiliza as bibliotecas pandas (implícita pelo nome do DataFrame vendas) e numpy (np).
+Ele realiza uma atribuição condicional para criar uma nova coluna chamada new_price (novo preço) no DataFrame vendas.'''
+
+print(vendas.drop(columns=['OrderID']))
+'''exclui a coluna determinada
+'''
+vendas = vendas[['OrderDate','State','new_price']]
+'''seleciona determinadas colunas '''
+
+vendas['preco_total'] = vendas['UnitPrice']* vendas['new_price']
+'''O código cria uma nova coluna chamada preco_total (preço total) no seu DataFrame vendas. O valor para cada linha desta nova coluna é o resultado da multiplicação dos valores das colunas existentes, UnitPrice e new_price, correspondentes àquela mesma linha.'''
+
+vendas = vendas.rename(columns={'new_price':'price'})
+'''O código vendas = vendas.rename(columns={'new_price':'price'}) renomeia especificamente a coluna chamada new_price para price dentro do DataFrame vendas.'''
+
+
+vendas_new = vendas.copy()
+vendas_new['pri_nome'] = vendas_new['CustomerName'].str.split(' ').str[0]
+vendas_new.query('pri_nome == "Sunita" ')
+'''filtrar um DataFrame baseado na primeira letra ou na primeira palavra do nome de um cliente.'''
+
+vendas_new['dia_datetine'] = pd.to_datetime(vendas_new['OrderDate'],format="%Y-%m-%d")
+vendas_new['dia_year'] = vendas_new['dia_datetine'].dt.year
+'''As duas linhas de código em Python, utilizando a biblioteca Pandas, servem para converter dados em datas e extrair o ano.'''
+
+vendas_new.to_csv('C:/Users/Casa/PycharmProjects/PETROBRAS/vendas_new.csv', index=False)
+'''para salvar um conjunto de dados (DataFrame) em um arquivo de formato CSV no seu computador.'''
+
+vendas_new.to_excel('C:/Users/Casa/PycharmProjects/PETROBRAS/vendas_new.xlsx', index=False)
+'''para salvar um conjunto de dados (DataFrame) em um arquivo de formato xlsx no seu computador.'''
+
+vendas['OrderID'] = vendas['Quantity'].apply(lambda x: 'Short' if x < 10 else ('avarege' if x < 50 else 'Tall'))
+'''ste código está criando uma nova coluna (ou atualizando uma existente) chamada OrderID baseada nos valores de outra coluna chamada Quantity.
+
+Ele utiliza uma lógica de classificação condicional (conhecida como "if-else") para categorizar as vendas em três níveis, dependendo da quantidade.'''
+
+
+def quantidade_produto(row):
+	if row['Quantity'] < 10 and row['UnitPrice'] < 20:
+		return 'preçobarato'
+	elif row['Quantity'] < 15 and row['UnitPrice'] < 30:
+		return 'preçocaro'
+	else:
+		return 'preçomuitocaro'
+
+
+vendas['catg'] = vendas.apply(quantidade_produto, axis=1)
+
+'''def é a melhor prática quando você precisa avaliar múltiplas colunas ao mesmo tempo (neste caso, Quantity e UnitPrice).
+vendas['catg']: Cria uma nova coluna chamada catg'''
+
+fusao e concatenação
+
+nocs = pd.read_csv('C:/Users/Casa/PycharmProjects/PETROBRAS/noc_regions.csv')
+vendas_new = pd.merge(vendas, nocs, left_on='Country', right_on='NOC', how='left', suffixes=['bios','nocdf'] )
+'''Você está basicamente combinando informações de duas tabelas diferentes para criar uma visão mais completa.(da nome aos sufixos)'''
+
+
+vendas_new[vendas_new['NOX_x']!= vendas_new['born_country_full']][['name','NOC_x','born_country_full']]
+'''O código compara a coluna NOC_x (que geralmente representa o código do país pelo qual o atleta competiu) com a coluna born_country_full (país de nascimento)
+O operador != significa "diferente de".Após filtrar as linhas, o código diz ao pandas para exibir apenas estas três colunas específicas, em vez de mostrar a tabela inteira.'''
+
+brazil = vendas[vendas['vendas_brazil']=='sao_paulo'].copy()
+'''Esta parte olha para a coluna chamada vendas_brazil dentro do seu DataFrame original (vendas). Ela cria uma "máscara" booleana, identificando todas as linhas onde o valor é exatamente igual a 'sao_paulo'.'''
+
+new_df =pd.concat([usa, gbr])
+'''Essa linha de código é usada na biblioteca Pandas do Python para combinar (empilhar) dois DataFrames diferentes em um só.'''
+
+combine_df = pd.merge(resultado, vendas, on='ref_id', how='left')
+'''Basicamente, ela está "unindo" as informações da tabela vendas à tabela resultado usando uma coluna em comum.'''
+
+
+valores nulos
+
+
+vendas.loc[[0,1], 'region'] = np.nan
+print(vendas.isna().sum())
+'''usado para manipulação e análise de dados. Ele realiza duas tarefas principais: altera valores específicos para "nulo" e depois verifica quantos valores nulos existem no conjunto de dados.'''
+
+print(vendas.fillna('sem dados'))
+'''De forma simples: ela serve para preencher valores vazios (NaN) em uma tabela ou coluna com o texto 'sem dados'.'''
+
+print(vendas.fillna(vendas['preço'].mean()))
+								   .interpolate()
+'''vendas['preço'].mean(): Calcula a média aritmética de todos os valores na coluna "preço" que não estão vazios.'''
+
+print(vendas['UnitPrice'].interpolate())
+'''O termo "interpolação" significa estimar valores desconhecidos que estão entre valores conhecidos. Em vez de simplesmente excluir os dados que faltam ou preenchê-los com um zero, o interpolate() tenta adivinhar qual seria o valor correto baseando-se nos vizinhos.'''
+
+vendas['UnitPrice'] = vendas['UnitPrice'].interpolate()
+'''Ao usar o código dessa forma, você está efetivamente salvando as alterações no seu conjunto de dados. Diferente de apenas imprimir na tela, aqui você está substituindo a coluna original UnitPrice pela versão que agora possui os valores "buracos" preenchidos.'''
+
+print(vendas.dropna(subset=['region'], inplace=True))
+'''O método .dropna() serve para remover linhas que contenham valores nulos (NaN).
+
+subset=['preço']: Diz ao Pandas para olhar apenas para a coluna "preço". Se houver um valor nulo ali, a linha será excluída. Se houver nulos em outras colunas, mas o preço estiver preenchido, a linha permanece.
+
+inplace=True: Isso é o "pulo do gato". Ele altera o DataFrame vendas diretamente na memória. Ele não cria uma cópia nova; ele modifica o original.'''
+
+print(vendas[vendas['region'].isna()])
+							 .notna()
+'''serve para localizar e exibir as linhas de um DataFrame onde os dados da coluna 'region' estão faltando (valores nulos).'''
+
+
+agregando dados
+
+print(vendas['Country'].value_counts())
+'''Ela serve para contar quantas vezes cada valor único aparece em uma coluna específica.'''
+
+print(vendas[vendas['Country']== 'Canada']['State'].value_counts())
+print(vendas[vendas['Country']== 'Canada']['City'].value_counts().tail(25))
+'''utilizando a biblioteca Pandas, serve para filtrar e contar informações específicas dentro de um conjunto de dados (DataFrame).'''
+
+vendas['UnitPrice'] = vendas['Discount'].interpolate()
+'''Diferente do fillna(), que preenche buracos com um valor fixo (como a média ou zero), o interpolate() estima os valores que faltam baseando-se nos valores vizinhos. Por padrão, ele usa a interpolação linear, traçando uma "linha reta" entre os pontos conhecidos.'''
+
+print(vendas.groupby(['Category'])['UnitPrice'].sum())
+											   .mean()
+'''Basicamente, ela está respondendo à pergunta: "Qual é o valor total acumulado do preço unitário para cada categoria de produto?'''
+
+print(vendas.groupby(['Category']).agg({'UnitPrice':'sum', 'Quantity':'mean'}))
+'''Esse código realiza um processo fundamental em análise de dados chamado Split-Apply-Combine (Dividir-Aplicar-Combinar). Ele serve para resumir informações de um conjunto de dados (um DataFrame chamado vendas) de acordo com categorias específicas.'''
+
+print(vendas.pivot)
+vendas.pivot(index='Dia', columns='Produto', values='Valor')
+
+'''ele transforma a organização dos seus dados, pegando valores de colunas específicas e transformando-os em novos índices (linhas) e novos cabeçalhos (colunas).'''
+
+
+pivot.sum(axis=1)
+'''serve para somar os valores na horizontal, ou seja, linha por linha.Pandas usa axis=0, que soma as colunas (de cima para baixo). Quando você define axis=1, você muda a direção da operação para as colunas:'''
+
+vendas['OrderDate'] = pd.to_datetime(vendas['OrderDate'])
+'''Em termos simples: ela converte uma coluna de datas que está formatada como "texto" (string) para o formato oficial de "Data e Hora" (datetime) do pandas.'''
+
+print(vendas.groupby(vendas['OrderDate'].dt.year)['CustomerName'].count())
+print(vendas.groupby(vendas['OrderDate'].dt.year)['CustomerName'].count().reset_index())
+print(vendas.groupby(vendas['OrderDate'].dt.year)['CustomerName'].count().reset_index().sort_values('CustomerName', ascending=False))
+
+'''Esse comando é utilizado na biblioteca Pandas do Python para realizar uma análise de contagem de vendas ao longo dos anos.
+De forma simples: ele agrupa seus dados por ano e conta quantos nomes de clientes aparecem em cada um desses anos.
+3 - linha Esse comando é um exemplo clássico de "encadeamento" (chaining) no Pandas. Ele pega uma tabela de vendas e transforma em um ranking de anos com o maior volume de clientes.'''
+
+vendas['OrderDate'] = pd.to_datetime(vendas['OrderDate']) #pd.to_datetime: Converte a coluna OrderDate para o formato de data oficial do Pandas. Isso é essencial porque, se a data estiver como texto (string), o Python não consegue entender o que é mês ou ano.
+vendas['mes_data'] = vendas['OrderDate'].dt.month  #.dt.month e .dt.year: Criam duas novas colunas separadas para o mês e para o ano. Isso facilita o agrupamento dos dados posteriormente.
+vendas['ano_data'] = vendas['OrderDate'].dt.year
+print(vendas.groupby([vendas['ano_data'],vendas['mes_data']])['CustomerName'].count().reset_index().sort_values('CustomerName', ascending=False))
+
+'''A última linha é a mais complexa e faz o seguinte: groupby(['ano_data', 'mes_data']): Reúne todas as linhas que pertencem ao mesmo mês e ano.
+['CustomerName'].count(): Conta quantas vendas (nomes de clientes) existem em cada um desses grupos.
+reset_index(): Transforma o resultado de volta em uma tabela organizada (DataFrame).
+sort_values(..., ascending=False): Ordena o resultado do maior para o menor.'''
+
+
+funlçoes avançadas
+
+.shift() .rank() .rolling() .cumsum()
+
+'''Função	O que ela faz na prática?
+.shift()	Move os dados para frente ou para trás no tempo.
+.rank()	Define a posição (1º, 2º...) de cada valor.
+.rolling()	Olha para um "pedaço" anterior dos dados (ex: últimos 3 dias).
+.cumsum()	Vai somando tudo o que passou até chegar na linha atual.'''
+
+
+vendas['1_Quantity'] = vendas['Quantity'].shift(2)
+'''O que cada parte faz
+vendas['Quantity']: Acessa a coluna original chamada "Quantity" (Quantidade).
+.shift(2): É o comando principal. Ele "desloca" os dados da coluna para baixo. O número 2 indica que cada valor será movido duas posições à frente.
+vendas['1_Quantity']: Cria uma nova coluna no seu DataFrame (ou atualiza uma existente) para armazenar esses valores deslocados.'''
+
+
+vendas['pct_change'] = vendas['Quantity'] / vendas['1_Quantity']
+
+vendas['pct_change'] = vendas['Quantity'] / vendas['1_Quantity'] * 100
+
+'''vendas['pct_change']: Cria uma nova coluna no seu DataFrame chamada "pct_change".
+vendas['Quantity']: Pega os valores da quantidade atual (ou do período atual).
+/: Divide o valor da primeira coluna pelo valor da segunda.
+vendas['1_Quantity']: Geralmente, esse nome sugere a quantidade do período anterior (como o mês passado ou o dia anterior).'''
+
+
+
+
+vendas['ordem_rank'] = vendas['OrderID'].rank()
+vendas['ordem_rank'].sort_values(ascending=False)
+'''Como funciona: Por padrão, o menor OrderID recebe o rank 1, o segundo menor o rank 2, e assim por diante.
+Empates: Se houver IDs iguais, o Pandas, por padrão, atribui a média das posições que eles ocupariam (ex: se dois itens disputam o 1º e 2º lugar, ambos recebem 1.5).'''
+
+
+vendas.sort_values(['ordem_rank'], ascending=False)
+'''o usar o código dessa forma, você está pedindo ao Pandas para reorganizar o DataFrame inteiro com base na coluna de ranking que você criou.'''
+
+
+vendas.sort_values(['ordem_rank']).sample(10)[['CustomerName','ordem_rank']]
+'''O comando retorna uma nova tabela (DataFrame) contendo:10 clientes escolhidos ao acaso.
+Apenas as colunas de nome e rank.
+Os dados estarão "embaralhados" (devido ao sample), mas mantendo os valores que foram processados durante a ordenação.'''
+
+vendas.cumsum()
+'''esse comando cria uma nova sequência onde cada elemento é a soma de todos os valores anteriores, incluindo o atual.'''
+
+
+vendas.select_dtypes('float').cumsum().reset_index()
+'''seleciona apenas aquelas que possuem números decimais (tipo float). Colunas com textos (strings), datas ou números inteiros simples são ignoradas nesta etapa.'''
+
+
+vendas['cumulativo_unit'] = vendas['UnitPrice'].cumsum()
+'''serve para calcular a soma acumulada (ou "running total") de uma coluna específica.'''
+
+
+ved1 = vendas[vendas['Category']=='Books'].copy() #: O código busca na coluna Category do DataFrame original (vendas) apenas as linhas que possuem o valor 'Books'.
+ved1['3dias'] = vendas['UnitPrice'].rolling(3).sum()
+
+'''vendas['UnitPrice']: Aqui há um ponto de atenção importante. O código está tentando buscar os dados do DataFrame original (vendas) em vez do DataFrame filtrado (ved1).
+.rolling(3): Cria uma "janela deslizante". Ela olha para a linha atual e para as duas anteriores.
+.sum(): Soma os valores dentro dessa janela de 3 elementos.'''
