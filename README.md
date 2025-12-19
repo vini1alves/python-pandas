@@ -4,7 +4,7 @@
 
 Localizado em Campinas, São Paulo. Atualmente focado em transformar dados brutos em informações estratégicas para a tomada de decisão.
 
-===
+---
 
 ### 🚀 Sobre Mim
 Sou estudante de Ciência de Dados com uma base sólida em logística e operações. Busco minha primeira oportunidade na área de Análise de Dados, onde posso aplicar minhas habilidades técnicas para gerar impacto real e inovação.
