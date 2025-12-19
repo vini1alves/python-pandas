@@ -1,4 +1,4 @@
-# Olá, eu sou o Vinicius Alves! [cite_start]👋 
+# Olá, eu sou o Vinicius Alves!👋 
 
 ### 📊 Estudante de Ciência de Dados | Analista de Dados em Formação
 
