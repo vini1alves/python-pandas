@@ -18,15 +18,17 @@ Sou estudante de Ciência de Dados com uma base sólida em logística e operaç�
 
 ### 🛠 Tecnologias e Ferramentas
 
-| Categoria | Ferramentas|
+| Categoria | Ferramentas|                                    
 | :--- | :--- |
 | **Linguagens** | Python, SQL |
 | **Visualização** | Power BI |
 | **Banco de Dados** | PostgreSQL |
 | **Outros** | Excel, Sistemas Integrados (ERP), Estatística |
-<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-<i class="devicon-postgresql-plain-wordmark"></i>
 
+<div style="display: inline">
+<img width='50' height='50' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+<img width='50' height='50' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />
+</div>
 
 ---
 
