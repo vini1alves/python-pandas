@@ -24,6 +24,9 @@ Sou estudante de Ciência de Dados com uma base sólida em logística e operaç�
 | **Visualização** | Power BI |
 | **Banco de Dados** | PostgreSQL |
 | **Outros** | Excel, Sistemas Integrados (ERP), Estatística |
+<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+<i class="devicon-postgresql-plain-wordmark"></i>
+
 
 ---
 
