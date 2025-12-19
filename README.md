@@ -1,18 +1,18 @@
 # Olá, eu sou o Vinicius Alves! [cite_start]👋 
 
-### 📊 Estudante de Ciência de Dados | [cite_start]Analista de Dados em Formação [cite: 6, 7]
+### 📊 Estudante de Ciência de Dados | Analista de Dados em Formação
 
-[cite_start]Localizado em Campinas, São Paulo[cite: 7]. [cite_start]Atualmente focado em transformar dados brutos em informações estratégicas para a tomada de decisão[cite: 10, 13].
+Localizado em Campinas, São Paulo. Atualmente focado em transformar dados brutos em informações estratégicas para a tomada de decisão.
 
 ---
 
 ### 🚀 Sobre Mim
-[cite_start]Sou estudante de Ciência de Dados com uma base sólida em logística e operações[cite: 6, 50, 52]. [cite_start]Busco minha primeira oportunidade na área de Análise de Dados, onde posso aplicar minhas habilidades técnicas para gerar impacto real e inovação[cite: 7, 21].
+Sou estudante de Ciência de Dados com uma base sólida em logística e operações. Busco minha primeira oportunidade na área de Análise de Dados, onde posso aplicar minhas habilidades técnicas para gerar impacto real e inovação.
 
-- [cite_start]🌱 Atualmente cursando: **Ciência de Dados (UniFavip Wyden)**[cite: 49, 50].
-- [cite_start]💡 Foco em: **Estatística, Modelagem Preditiva e Visualização de Dados**[cite: 15].
-- [cite_start]🛠️ Experiência prévia: Mais de 4 anos atuando em logística e e-commerce, desenvolvendo forte raciocínio analítico e atenção aos detalhes[cite: 25, 27, 44].
-- [cite_start]📫 Contato: [viniciusnet22@live.com](mailto:viniciusnet22@live.com)[cite: 3].
+- 🌱 Atualmente cursando: **Ciência de Dados (UniFavip Wyden)**.
+- 💡 Foco em: **Estatística, Modelagem Preditiva e Visualização de Dados**.
+- 🛠️ Experiência prévia: Mais de 2 anos atuando em logística e e-commerce, desenvolvendo forte raciocínio analítico e atenção aos detalhes.
+- 📫 Contato: [viniciusnet22@live.com](mailto:viniciusnet22@live.com).
 
 ---
 
