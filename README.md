@@ -18,36 +18,36 @@ Sou estudante de Ciência de Dados com uma base sólida em logística e operaç�
 
 ### 🛠 Tecnologias e Ferramentas
 
-| Categoria | Ferramentas |
+| Categoria | Ferramentas|
 | :--- | :--- |
-| **Linguagens** | [cite_start]Python, SQL [cite: 6, 15] |
-| **Visualização** | [cite_start]Power BI [cite: 6, 15] |
-| **Banco de Dados** | [cite_start]PostgreSQL [cite: 8] |
-| **Outros** | [cite_start]Excel, Sistemas Integrados (ERP), Estatística [cite: 15, 27] |
+| **Linguagens** | Python, SQL |
+| **Visualização** | [cite_start]Power BI |
+| **Banco de Dados** | [cite_start]PostgreSQL |
+| **Outros** | Excel, Sistemas Integrados (ERP), Estatística |
 
 ---
 
 ### 💼 Experiência Profissional (Destaques)
 
-**DP SERVIÇOS LTDA** | *Auxiliar de estoque / E-commerce* | [cite_start]Maio/2024 – Set/2025 [cite: 23, 24, 25]
-> [cite_start]Atuação com controle de estoque e análise de informações em sistemas integrados, garantindo precisão no fluxo logístico e redução de erros no processamento de pedidos[cite: 27, 29].
+**DP SERVIÇOS LTDA** | *Auxiliar de estoque / E-commerce* | Maio/2024 – Set/2025 
+> Atuação com controle de estoque e análise de informações em sistemas integrados, garantindo precisão no fluxo logístico e redução de erros no processamento de pedidos.
 
-**Hypar Comércio de Parafusos** | *Técnico de logística* | [cite_start]Jan/2023 – Out/2023 [cite: 30, 31, 32]
-> [cite_start]Suporte às operações logísticas com foco em inventário e conferência documental para garantir a rastreabilidade dos itens[cite: 33, 34].
+**Hypar Comércio de Parafusos** | *Técnico de logística* |Jan/2023 – Out/2023 
+> Suporte às operações logísticas com foco em inventário e conferência documental para garantir a rastreabilidade dos itens.
 
 ---
 
 ### 🎓 Formação e Certificações
-* [cite_start]**CST em Ciência de Dados** – UniFavip Wyden (Conclusão em 2027)[cite: 49, 50].
-* [cite_start]**Técnico em Gestão da Cadeia de Suprimentos e Logística** – Senac SP[cite: 51, 52].
-* [cite_start]**Certificações Adicionais:** Introdução à IA Moderna, Computer Hardware Basics e Digital Awareness[cite: 19, 20].
+* **CST em Ciência de Dados** – UniFavip Wyden (Conclusão em 2027).
+* **Técnico em Gestão da Cadeia de Suprimentos e Logística** – Senac SP.
+* **Certificações Adicionais:** Introdução à IA Moderna, Computer Hardware Basics e Digital Awareness.
 
 ---
 
 ### 🌐 Conecte-se comigo
 <div align="left">
   <a href="https://www.linkedin.com/in/vinicius-alves-aa1651171" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
-  <a href="mailto:viniciusnet22@live.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
+  <a href="mailto:viniciusnet22@live.com"><img src="(https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:viniciusnet22@live.com)></a>
 </div>
 
 ---
