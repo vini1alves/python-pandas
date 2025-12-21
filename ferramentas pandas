@@ -7,7 +7,7 @@ exibiçao
 
 print()
 print(df.shape)
-'''mortra o corpo do df'''
+'''mostra o corpo do df'''
 print(df)
 '''para exibir o conteúdo de um DataFrame (df)'''
 print(df.info())
