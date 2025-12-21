@@ -1,3 +1,4 @@
+componentes de prompt
 1- introdução = (orientar o que se deve ser feito para ia ex:(liste livros sobre ficção científica))
 --
 2- exemplos = (few-shot learning) a forma como ele deve fazer: (escrever o que ele deve fazer e como, mostrando um exemplo de como voce quer que ele faça)
@@ -13,3 +14,9 @@
 7-formato de saída = (lista,lista numérica, tópicos, parágrafo, parágrafo único, pdf, xlsx, JSON, idoso, crianças com necessidades especiais)
 --
 8-conteudo de suporte = (adicione os tipos dentro do cenário como categoria dos produtos carros: Ferrari, Lamborghini, Audi.
+
+
+
+técnicas de prompt
+
+1-
