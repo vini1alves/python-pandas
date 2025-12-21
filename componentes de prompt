@@ -1,10 +1,15 @@
-1- introdução= orientar o que se deve ser feito para ia ex:(liste livros sobre ficção científica)
+1- introdução = (orientar o que se deve ser feito para ia ex:(liste livros sobre ficção científica))
 --
-2-
-3-
-4-
-5-
-6-
-7-
-8-
-  
+2- exemplos = (few-shot learning) a forma como ele deve fazer: (escrever o que ele deve fazer e como, mostrando um exemplo de como voce quer que ele faça)
+--
+3- contexto = ( atue como um em professor com mestrado em geologia) 
+--
+4-restrição-limitações = (determine a quantidade ou qualidade ex: leia somente até a página 25 que contenha somente às falas em terceira pessoa)
+--
+5-conceito principal = (usando como referência a teoria de relatividade de Einstein)
+--
+6-indicação = (em resumo,poema estrofe,tabela como ele deve ser redigido)
+--
+7-formato de saída = (lista,lista numérica, tópicos, parágrafo, parágrafo único, pdf, xlsx, JSON, idoso, crianças com necessidades especiais)
+--
+8-conteudo de suporte = (adicione os tipos dentro do cenário como categoria dos produtos carros: Ferrari, Lamborghini, Audi.
