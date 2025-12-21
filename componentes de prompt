@@ -19,4 +19,28 @@ componentes de prompt
 
 técnicas de prompt
 
-1-
+1-instruções claras
+(orientação que seja objetivas, detalhadas e colocads no início para dar clareza)
+--
+2-preparar  a saída
+(defina palavras ou frases no final do prompt modar o prompt para tornar-se mais estruturado e claro)
+--
+3-solicitação em cadeia de pensamento
+(instrução para responder passo a passo)
+--
+4-especificar estrutura de saída
+(lista,pontilhado,numerados,tabela)
+--
+5-repetir instruções no final
+(reforçar no final oque voce pediu no início para que ele siga a tarefa sem sair do script)
+--
+6-dividir a tarefa
+(pedir por etapas pois um problema menor e mais facil de resolver)
+--
+7-adicionar sintaxe clara
+(organiza pelo tipo de formatação tipo eu quero em tabela com instruções mais visuais)
+--
+8-guardrailis
+tecnicas para limitar respostas o que seja irrelevante  ou incorretas)
+
+
