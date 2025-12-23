@@ -280,3 +280,9 @@ ved1['3dias'] = vendas['UnitPrice'].rolling(3).sum()
 '''vendas['UnitPrice']: Aqui há um ponto de atenção importante. O código está tentando buscar os dados do DataFrame original (vendas) em vez do DataFrame filtrado (ved1).
 .rolling(3): Cria uma "janela deslizante". Ela olha para a linha atual e para as duas anteriores.
 .sum(): Soma os valores dentro dessa janela de 3 elementos.'''
+
+funçoes novas
+
+resuatado_arrow = pd.read_csv('C:/Users/Casa/PycharmProjects/PETROBRAS/vendas_new.csv', engine='pyarrow', dtype_backend='pyarrow')
+'''O que faz: Utiliza o motor PyArrow para ler o arquivo e armazena os dados no formato Apache Arrow,
+Vantagens principais:Velocidade, Eficiência de Memória, Integração'''
