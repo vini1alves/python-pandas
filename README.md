@@ -5,12 +5,10 @@
 Localizado em Campinas, São Paulo. Atualmente focado em transformar dados brutos em informações estratégicas para a tomada de decisão.
 
 ---
-##  3 projetos propostos pelo bootcamp  Bradesco - GenAI & Dados
----
-### 1- NotebookLM Financial Guia: Estruturação de Estudo Ativo com IA
-Este repositório contém a documentação de um ecossistema de aprendizagem personalizado criado no NotebookLM. O objetivo do projeto foi transformar fontes brutas de finanças introdutórias em um guia de estudo inteligente, utilizando técnicas de curadoria de conteúdo, engenharia de prompts e pensamento crítico para otimizar a retenção do conhecimento financeiro.
+###  python
 
-link:[NotebookLM](https://notebooklm.google.com/notebook/92f16aa7-569a-48e5-b51a-248290468d22)
+Neste repositório vou colocar meus estudos e projeto relacionado a pyhton para ciência de dados no início vou passar pela engenharia de dados, análise de dados e por fim vou chegar na ciência de dados.
+vou documentar tudo aqui, me aconpanhe para ver minha evolução.
 
 ---
 ### 🚀 Sobre Mim
