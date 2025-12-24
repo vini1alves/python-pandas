@@ -5,7 +5,12 @@
 Localizado em Campinas, São Paulo. Atualmente focado em transformar dados brutos em informações estratégicas para a tomada de decisão.
 
 ---
+### NotebookLM Financial Guia: Estruturação de Estudo Ativo com IA
+Este repositório contém a documentação de um ecossistema de aprendizagem personalizado criado no NotebookLM. O objetivo do projeto foi transformar fontes brutas de finanças introdutórias em um guia de estudo inteligente, utilizando técnicas de curadoria de conteúdo, engenharia de prompts e pensamento crítico para otimizar a retenção do conhecimento financeiro.
 
+-link:[NotebookLM](https://notebooklm.google.com/notebook/92f16aa7-569a-48e5-b51a-248290468d22)
+
+---
 ### 🚀 Sobre Mim
 Sou estudante de Ciência de Dados com uma base sólida em logística e operações. Busco minha primeira oportunidade na área de Análise de Dados, onde posso aplicar minhas habilidades técnicas para gerar impacto real e inovação.
 
@@ -32,13 +37,7 @@ Sou estudante de Ciência de Dados com uma base sólida em logística e operaç�
 
 ---
 
-### 💼 Experiência Profissional (Destaques)
 
-**DP SERVIÇOS LTDA** | *Auxiliar de estoque / E-commerce* | Maio/2024 – Set/2025 
-> Atuação com controle de estoque e análise de informações em sistemas integrados, garantindo precisão no fluxo logístico e redução de erros no processamento de pedidos.
-
-**Hypar Comércio de Parafusos** | *Técnico de logística* |Jan/2023 – Out/2023 
-> Suporte às operações logísticas com foco em inventário e conferência documental para garantir a rastreabilidade dos itens.
 
 ---
 
