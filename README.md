@@ -56,6 +56,8 @@ Sou estudante de Ciência de Dados com uma base sólida em logística e operaç�
   <a href="mailto:viniciusnet22@live.com">
   <img src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white">
 </a>
+  <a href="https://youtu.be/pBW5QZ7_R6o?list=PLp0FvpKzHs0nJCBBKhWB2-XezWcUcwCiA" target="_blank"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white">
+  </a>
 </div>
 
 ---
