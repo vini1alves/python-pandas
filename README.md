@@ -1,13 +1,16 @@
 # Olá, eu sou o Vinicius Alves!👋 
 
-### 📊 Estudante de Ciência de Dados | Analista de Dados em Formação
+### 📊 pyhton- Pandas
 
 Localizado em Campinas, São Paulo. Atualmente focado em transformar dados brutos em informações estratégicas para a tomada de decisão.
 
 ---
 ###  python
 
-Neste repositório vou colocar meus estudos e projeto relacionado a pyhton para ciência de dados no início vou passar pela engenharia de dados, análise de dados e por fim vou chegar na ciência de dados.
+Neste repositório vou colocar meus estudos e projeto relacionado a pyhton para ciência de dados no início vou passar pela 
+-engenharia de dados, 
+-análise de dados,
+-ciência de dados,
 vou documentar tudo aqui, me aconpanhe para ver minha evolução.
 
 ---
