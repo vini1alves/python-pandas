@@ -7,19 +7,16 @@ Localizado em Campinas, São Paulo. Atualmente focado em transformar dados bruto
 ---
 ###  python
 
-Neste repositório vou colocar meus estudos e projeto relacionado a pyhton para ciência de dados no início vou passar pela 
--engenharia de dados, 
--análise de dados,
--ciência de dados,
+Neste repositório vou colocar meus estudos e projeto relacionado a pyhton para ciência de dados no início vou passar pela
+
+engenharia de dados
+
+análise de dados
+
+ciência de dados
+
 vou documentar tudo aqui, me aconpanhe para ver minha evolução.
 
----
-### 🚀 Sobre Mim
-Sou estudante de Ciência de Dados com uma base sólida em logística e operações. Busco minha primeira oportunidade na área de Análise de Dados, onde posso aplicar minhas habilidades técnicas para gerar impacto real e inovação.
-
-- 🌱 Atualmente cursando: **Ciência de Dados (UniFavip Wyden)**.
-- 💡 Foco em: **Estatística, Modelagem Preditiva e Visualização de Dados**.
-- 🛠️ Experiência prévia: Mais de 2 anos atuando em logística e e-commerce, desenvolvendo forte raciocínio analítico e atenção aos detalhes.
 - 📫 Contato: [viniciusnet22@live.com](mailto:viniciusnet22@live.com).
 
 ---
@@ -28,13 +25,9 @@ Sou estudante de Ciência de Dados com uma base sólida em logística e operaç�
 
 | Categoria | Ferramentas|                                    
 | :--- | :--- |
-| **Linguagens** | Python, SQL |
-| **Visualização** | Power BI |
-| **Banco de Dados** | PostgreSQL |
-| **Outros** | Excel, Sistemas Integrados (ERP), Estatística |
+| **Linguagens** | Python,|
 
 <div style="display: inline">
-<img width='50' height='50' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
 <img width='50' height='50' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />
 </div>
 
