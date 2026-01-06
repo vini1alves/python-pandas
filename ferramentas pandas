@@ -79,6 +79,10 @@ vendas = vendas.rename(columns={'new_price':'price'})
 '''O código vendas = vendas.rename(columns={'new_price':'price'}) renomeia especificamente a coluna chamada new_price para price dentro do DataFrame vendas.'''
 
 
+vendas [['price','price_2']] = vendas['price'].str.rsplit('-', n=1, expand=True) 
+'''utilizado para dividir o conteúdo de uma coluna em duas novas colunas, baseando-se em um separador específico — neste caso, o hífen -.'''
+
+
 vendas_new = vendas.copy()
 ''' cria uma copia do arquivo (vendas)'''
 vendas_new['pri_nome'] = vendas_new['CustomerName'].str.split(' ').str[0]
