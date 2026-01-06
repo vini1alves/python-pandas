@@ -80,6 +80,7 @@ vendas = vendas.rename(columns={'new_price':'price'})
 
 
 vendas_new = vendas.copy()
+''' cria uma copia do arquivo (vendas)'''
 vendas_new['pri_nome'] = vendas_new['CustomerName'].str.split(' ').str[0]
 vendas_new.query('pri_nome == "Sunita" ')
 '''filtrar um DataFrame baseado na primeira letra ou na primeira palavra do nome de um cliente.'''
