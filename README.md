@@ -47,7 +47,7 @@ vou documentar tudo aqui, me aconpanhe para ver minha evolução.
 
   
   <a href="https://www.youtube.com/embed/Uqnd1TJcsZ0?si=iVXU2u170lsZYI19" target="_blank"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white">
-  </a> ### <- ETL
+  </a> <-- video-ETL
 </div>
 
 ---
