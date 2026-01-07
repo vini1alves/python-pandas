@@ -56,6 +56,10 @@ print(df.query('Country == "Canada" '))
 print(df.query('Country == "Canada" and Country == "Australia" '))
 '''O comando print(vendas.query('Country == "Canada" ')) busca e imprime todas as linhas do DataFrame vendas onde o valor na coluna Country (País) é exatamente igual a "Canada".'''
 
+df['cpf'] = df['cpf'].apply(lambda x: f"***.{x[4:7]}.***-**")
+'''Alteração: Anonimizar o CPF do cliente para cumprir normas de privacidade'''
+
+
 adiconar colunas e remover
 
 df['price'] = 4.99
