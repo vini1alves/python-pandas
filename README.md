@@ -10,6 +10,7 @@ Localizado em Campinas, São Paulo. Atualmente focado em transformar dados bruto
 Neste repositório vou colocar meus estudos e projeto relacionado a pyhton para ciência de dados no início vou passar pela
 
 engenharia de dados
+Este projeto demonstra a automação de um processo de ETL (Extract, Transform, Load) utilizando Python e a biblioteca Pandas. O objetivo foi recriar um fluxo de tratamento de dados que originalmente seria realizado no Power Query (Power BI/Excel).
 
 análise de dados
 
@@ -30,17 +31,6 @@ vou documentar tudo aqui, me aconpanhe para ver minha evolução.
 <div style="display: inline">
 <img width='50' height='50' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />
 </div>
-
----
-
-
-
----
-
-### 🎓 Formação e Certificações
-* **CST em Ciência de Dados** – UniFavip Wyden (Conclusão em 2027).
-* **Técnico em Gestão da Cadeia de Suprimentos e Logística** – Senac SP.
-* **Certificações Adicionais:** Introdução à IA Moderna, Computer Hardware Basics e Digital Awareness.
 
 ---
 
