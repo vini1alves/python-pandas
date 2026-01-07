@@ -9,12 +9,14 @@ Localizado em Campinas, São Paulo. Atualmente focado em transformar dados bruto
 
 Neste repositório vou colocar meus estudos e projeto relacionado a pyhton para ciência de dados no início vou passar pela
 
-engenharia de dados
+engenharia de dados:
+
 Este projeto demonstra a automação de um processo de ETL (Extract, Transform, Load) utilizando Python e a biblioteca Pandas. O objetivo foi recriar um fluxo de tratamento de dados que originalmente seria realizado no Power Query (Power BI/Excel).
 
-análise de dados
+análise de dados:
 
-ciência de dados
+
+ciência de dados:
 
 vou documentar tudo aqui, me aconpanhe para ver minha evolução.
 
