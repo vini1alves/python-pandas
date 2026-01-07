@@ -1,4 +1,4 @@
-# powerquery-to-pandas-migration!
+# meus projetos de dados!
 
 ### 📊 pyhton- Pandas
 
@@ -44,8 +44,10 @@ vou documentar tudo aqui, me aconpanhe para ver minha evolução.
   <a href="mailto:viniciusnet22@live.com">
   <img src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white">
 </a>
-  <a href="https://youtu.be/pBW5QZ7_R6o?list=PLp0FvpKzHs0nJCBBKhWB2-XezWcUcwCiA" target="_blank"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white">
-  </a>
+
+  
+  <a href="https://www.youtube.com/embed/Uqnd1TJcsZ0?si=iVXU2u170lsZYI19" target="_blank"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white">
+  </a> ### <- ETL
 </div>
 
 ---
